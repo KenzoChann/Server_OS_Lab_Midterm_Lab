@@ -1,0 +1,3 @@
+echo FROM ubuntu:22.04 > Dockerfile
+echo # Lab 4 Report > report.txt
+echo # Lab 4 Apache Web Server > README.md
