@@ -1,0 +1,12 @@
+LAB 4 - APACHE IN-CLASS EXERCISE
+Name: Thin Thiri Zaw
+Student ID: 6705142020
+Date: 02/Oct/2026
+----------------------------------------
+
+--- Task 1 Log Results ---
+     14 200
+      4 404
+::1 - - [02/Oct/2026:08:00:16 +0000] "GET /about.html HTTP/1.1" 200 542 "-" "curl/8.5.0"
+::1 - - [02/Oct/2026:08:00:16 +0000] "GET /missing-page.html HTTP/1.1" 404 436 "-" "curl/8.5.0"
+::1 - - [02/Oct/2026:08:05:39 +0000] "GET / HTTP/1.1" 200 818 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
