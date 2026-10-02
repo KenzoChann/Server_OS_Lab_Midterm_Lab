@@ -1,10 +1,10 @@
 LAB 4 - APACHE IN-CLASS EXERCISE
-Name: Thin Thiri Zaw
+Name: Your Name
 Student ID: 6705142020
 Date: 02/Oct/2026
 ----------------------------------------
+Task 1 - Generate a Mix of Traffic
 
---- Task 1 Log Results ---
      14 200
       4 404
 ::1 - - [02/Oct/2026:08:00:16 +0000] "GET /about.html HTTP/1.1" 200 542 "-" "curl/8.5.0"
