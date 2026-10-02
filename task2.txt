@@ -1,0 +1,26 @@
+# Task 2 - HTTP Request Methods & Status Codes
+
+## 1. Testing HTTP Methods
+
+Below are the predicted and actual observed HTTP status codes when testing different request methods against the default static web page (`http://localhost/index.html`).
+
+| HTTP Method | Command Used | Predicted Code | Observed Code |
+|---|---|---|---|
+| GET | curl -I -X GET http://localhost/index.html | 200 OK | 200 OK |
+| POST | curl -I -X POST http://localhost/index.html | 200 OK / 405 Method Not Allowed | 200 OK |
+| PUT | curl -I -X PUT http://localhost/index.html | 405 Method Not Allowed | 405 Method Not Allowed |
+| DELETE | curl -I -X DELETE http://localhost/index.html | 405 Method Not Allowed | 405 Method Not Allowed |
+
+---
+
+## 2. Explanation: 404 Not Found vs. 405 Method Not Allowed
+
+### 404 Not Found
+- **Meaning**: The requested resource/URL does not exist on the server.
+- **When it occurs**: Triggered when a client tries to access a path or file that the web server cannot locate (e.g., `GET /missing-page.html`).
+- **Core Cause**: Missing target resource.
+
+### 405 Method Not Allowed
+- **Meaning**: The requested resource exists, but the HTTP method used to access it is explicitly disallowed or unsupported by the server configuration for that specific resource.
+- **When it occurs**: Triggered when attempting an unsupported action on an existing path (e.g., sending a `DELETE` or `PUT` request to a standard static file served by Apache without dynamic upload handling configured).
+- **Core Cause**: Unpermitted operation on an existing resource.
