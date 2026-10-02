@@ -3,7 +3,7 @@ Method received: GET
 Query string: course=192-442&week=4
 Method received: POST
 Query string: 
-POST body: name=student&id=123
+POST body: name=Kaung Myat Tun &id=6705142016
 ::1 - - [02/Oct/2026:05:08:10 +0000] "GET /cgi-bin/echo.sh?course=192-442&week=4 HTTP/1.1" 200 270 "-" "curl/8.5.0"
 ::1 - - [02/Oct/2026:05:08:23 +0000] "POST /cgi-bin/echo.sh HTTP/1.1" 200 281 "-" "curl/8.5.0"
 
